@@ -16,4 +16,19 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+ }
+export class data {
+  name: string;
+  description:string;
+  flickr_images:string;
+  constructor(
+    name: string,
+  description:string,
+  flickr_images:string,
+  ){
+    this.name = name;
+    this.description = description;
+    this.flickr_images = flickr_images;
+  }
+}
